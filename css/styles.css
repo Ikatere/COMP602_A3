@@ -2,13 +2,13 @@ body {
   font-family: 'Pixelify Sans', sans-serif;
   color: #282828;
   margin: 0;
-  background: url('/assets/bg.png');
+  background: url('Ikatere/Potion-Seller/assets/bg.png');
   background-size: cover;
 }
 
 
 .nav-bar {
-  background: url('/assets/banner.png') center/contain no-repeat;
+  background: url('Ikatere/Potion-Seller/assets/banner.png') center/contain no-repeat;
   height: 250px; /* Adjust the height as needed */
   width: auto;
   display: flex;
