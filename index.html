@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png"> 
+    <link rel="icon" type="image/x-icon" href="./assets/"> 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap">
     <title>Potion Seller</title>
@@ -20,12 +20,14 @@
   <div class="buffer">
     <div id="app">
 
-      <div class="cart" @click="toggleCart">
+      <div class="cart">
         <p>Cart({{ cart.length }})</p>
-        <cart-content :items="cart" v-if="showCart"></cart-content>
+        <cart-content :items="cart"></cart-content>
       </div>
 
       <product :premium="premium" :cart="cart" @add-to-cart="updateCart" @remove-from-cart="removeFromCart"></product>
+      
+
       
     </div>
   </div>
