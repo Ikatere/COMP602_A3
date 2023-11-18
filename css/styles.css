@@ -1,0 +1,158 @@
+body {
+  font-family: 'Pixelify Sans', sans-serif;
+  color: #282828;
+  margin: 0;
+  background: url('/assets/bg.png');
+  background-size: cover;
+}
+
+
+.nav-bar {
+  background: url('/assets/banner.png') center/contain no-repeat;
+  height: 250px; /* Adjust the height as needed */
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 120px;
+  color: white;
+  -webkit-text-stroke: 4px black; 
+}
+
+.banner-buffer {
+  padding: 5%;
+}
+
+.buffer {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 5%;
+  border: 5px solid #000000;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+img {
+  border: 2px solid #000000;
+  width: 70%;
+  margin: 40px;
+  box-shadow: 0px 0.5px 1px #d8d8d8;
+  border-radius: 10px;
+}
+
+.product-image {
+  width: 80%;
+}
+
+.product-image,
+.product-info {
+  margin-top: 10px;
+  width: 50%;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  display: flex;
+  display: inline-block;
+}
+
+.cart {
+  position: fixed;
+  top: 20px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  cursor: pointer;
+  border: 2px solid #474646;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: white;
+  z-index: 1000; /* Ensure the cart appears above other elements */
+}
+
+.cart-content {
+  position: fixed;
+  top: 50px; /* Adjust the top position to align with the cart */
+  right: 20px; /* Adjust the right position as needed */
+  display: none;
+  border: 2px solid #474646;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  z-index: 999; /* Ensure the cart content appears above other elements */
+}
+
+.cart-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-content th, .cart-content td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+.cart:hover .cart-content {
+  display: block;
+}
+
+
+button {
+  margin: 30px 0;
+  border: 2px solid #4e3a5e;
+  background-color: #1E95EA;
+  color: white;
+  height: 60px;
+  width: 100px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button-container button {
+  display: inline-block;
+}
+
+.disabledButton {
+  background-color: #d8d8d8;
+}
+
+.review-form {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 60px;
+}
+
+.tab {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.activeTab {
+  color: #16C0B0;
+  text-decoration: underline;
+}
